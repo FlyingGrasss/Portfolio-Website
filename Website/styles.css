@@ -1,0 +1,77 @@
+/*
+    colors to use
+    for the line above: #121212
+    for white just use white
+    for gray use rgba(255,255,255,0.25) or rgba(255,255,255,0.5) I am not sure
+
+*/
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-family: "Public Sans", sans-serif;
+}
+
+
+#top_section {
+    margin: 25px 80px 0;
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    border-bottom: 2px solid #222222;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+#name {
+    font-size: larger;
+    border: 0 0 1px gray;
+    margin-right: 679.92px;
+}
+
+.link {
+    text-decoration: none;
+    color: #808080;
+    margin: 0px 20px;
+}
+.link:hover {
+    color: white;
+}
+#linkedin_top {
+    color: white;
+    margin-right: 0;
+    background-color: #174879;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+#linkedin_box {
+    background-color: white;
+    color: #174879;
+    padding: 0px 3px;
+    border-radius: 2px;
+}
+
+#main_text_section {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+}
+#main_text {
+    color: rgba(255,255,255,0.5);
+    font-size: xx-large;
+}
+
+#hello_world {
+    color: #174879; 
+    margin: 10px 80px;
+    font-style: italic;
+    font-weight: bolder;
+}
+.special_text {
+    color: white;
+    font-weight: bolder;
+}
