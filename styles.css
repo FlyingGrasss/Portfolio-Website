@@ -148,7 +148,7 @@ html, body {
         margin: 0 1rem;
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     #top_section {
         font-size: 0.70rem;
     }
