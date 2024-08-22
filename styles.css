@@ -145,10 +145,10 @@ html, body {
         height: 64px;
     }
     .link {
-        margin: 0 1rem;
+        margin: 0 0.8rem;
     }
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     #top_section {
         font-size: 0.70rem;
     }
