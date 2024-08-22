@@ -37,7 +37,7 @@ html, body {
 .link {
     text-decoration: none;
     color: #808080;
-    margin: 0px 20px;
+    margin: 0px 1.2rem;
 }
 .link:hover {
     color: white;
@@ -144,6 +144,9 @@ html, body {
         width: 64px;
         height: 64px;
     }
+    .link {
+        margin: 0 1rem;
+    }
 }
 @media (max-width: 500px) {
     #top_section {
@@ -171,6 +174,9 @@ html, body {
     .logo {
         width: 48px;
         height: 48px;
+    }
+    .link {
+        margin: 0 0.6rem;
     }
 }
 @keyframes fallIn {
