@@ -4,6 +4,7 @@
     for white just use white
     for gray use rgba(255,255,255,0.25) or rgba(255,255,255,0.5) I am not sure
     it breaks at 594px width
+    for some goddang reason my phone is like 360px
 */
 img {
     max-width: 100%;
@@ -185,7 +186,7 @@ html, body {
         font-size: 0.8rem;
     }
     #main_text {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
 @media (max-width: 384px) {
