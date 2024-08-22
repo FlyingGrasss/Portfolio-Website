@@ -148,18 +148,19 @@ html, body {
         margin: 0 0.8rem;
     }
 }
+
 @media (max-width: 500px) {
     #top_section {
-        font-size: 0.70rem;
+        font-size: 0.5rem;
     }
     #main_text {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     #emre_text {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     #rotating_text {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .special_text {
         font-size: 1rem;
@@ -177,6 +178,20 @@ html, body {
     }
     .link {
         margin: 0 0.6rem;
+    }
+}
+@media (max-width: 404px) {
+    #name {
+        font-size: 0.8rem;
+    }
+    #main_text {
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 384px) {
+    #name {
+        font-size: 0.7rem;
+        margin-right: auto;
     }
 }
 @keyframes fallIn {
