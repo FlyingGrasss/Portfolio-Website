@@ -3,7 +3,7 @@
     for the line above: #121212
     for white just use white
     for gray use rgba(255,255,255,0.25) or rgba(255,255,255,0.5) I am not sure
-
+    it breaks at 594px width
 */
 img {
     max-width: 100%;
@@ -20,7 +20,7 @@ html, body {
 
 
 #top_section {
-    margin-bottom: 20px;
+    margin-bottom: 1.2rem;
     display: flex;
     flex-wrap: wrap;
     border-bottom: 2px solid #222222;
@@ -68,7 +68,7 @@ html, body {
 
 #hello_world {
     color: #174879; 
-    margin: 10px 5rem;
+    margin: 10px 1.5rem;
     font-style: italic;
     font-weight: bolder;
 }
@@ -118,36 +118,56 @@ html, body {
 
 @media (max-width: 768px) {
     #top_section {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;   
+        align-items: center;
+        justify-content: space-between;
+        font-size: 0.8rem;
     }
 
     #name {
-        margin-bottom: 10px;
+        font-size: 1rem;
     }
 
     #main_text_section {
         margin: 20px auto;
     }
-
+    .special_text {
+        font-size: 1.5rem;
+    }
     #main_text {
         font-size: 1.5rem;
     }
-
+    .normal_text {
+        font-size: 0.75rem;
+    }
     .logo {
         width: 64px;
         height: 64px;
     }
 }
-@media (max-width: 480px) {
-    #name {
-        font-size: 1.25rem;
+@media (max-width: 500px) {
+    #top_section {
+        font-size: 0.70rem;
     }
-
     #main_text {
-        font-size: 1.25rem;
+        font-size: 0.8rem;
+    }
+    #emre_text {
+        font-size: 0.8rem;
+    }
+    #rotating_text {
+        font-size: 0.8rem;
+    }
+    .special_text {
+        font-size: 1rem;
+    }
+    #projects_container {
+        font-size: 0.8rem;
     }
 
+    #hello_world {
+        font-size: 0.65rem;
+    }
     .logo {
         width: 48px;
         height: 48px;
