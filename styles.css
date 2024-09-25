@@ -1,60 +1,57 @@
-/*
-    colors to use
-    for the line above: #121212
-    for white just use white
-    for gray use rgba(255,255,255,0.25) or rgba(255,255,255,0.5) I am not sure
-    it breaks at 594px width
-    for some goddang reason my phone is like 360px
-*/
+/* General settings */
 img {
     max-width: 100%;
     height: auto;
 }
+
 html, body {
     margin: 0;
     height: 100%;
-    background-color: black;
-    color: rgba(255,255,255,0.5);
+    background: linear-gradient(to right, #ff9a9e 0%, #fecfef 100%);
+    color: #333333;
     font-family: "Public Sans", sans-serif;
     scroll-behavior: smooth;
 }
 
-
+/* Top section styling */
 #top_section {
     margin-bottom: 1.2rem;
     display: flex;
     flex-wrap: wrap;
-    border-bottom: 2px solid #222222;
+    border-bottom: 2px solid #333333;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
 }
+
 #name {
     font-size: 1.5rem;
-    border: 0 0 1px gray;
     margin-right: auto;
 }
 
 .link {
     text-decoration: none;
-    color: #808080;
+    color: #174879; /* Adjusted to match LinkedIn button */
     margin: 0px 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
+
 .link:hover {
-    color: white;
+    color: #ff6b6b; /* Softer hover effect */
 }
+
 #linkedin_top {
     color: white;
     margin-right: 0;
     background-color: #174879;
     padding: 5px 10px;
     border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
-#linkedin_box {
-    background-color: white;
-    color: #174879;
-    padding: 0px 3px;
-    border-radius: 2px;
+
+#linkedin_top:hover {
+    background-color: #ff6b6b; /* Hover color to blend with the gradient */
 }
 
 #main_text_section {
@@ -62,40 +59,48 @@ html, body {
     padding: 20px;
     margin: 40px auto;
 }
+
 #main_text {
-    color: rgba(255,255,255,0.5);
     font-size: 2rem;
+    color: #333333; /* Softer than black */
 }
 
 #hello_world {
-    color: #174879; 
+    color: #174879;
     margin: 10px 1.5rem;
     font-style: italic;
     font-weight: bolder;
 }
+
 .special_text {
-    color: white;
+    color: #ff6b6b; /* Harmonizes with the background gradient */
     font-weight: bolder;
     margin-bottom: 40px;
 }
+
+/* Projects section */
 #projects {
     margin-top: 50px;
     padding: 20px;
     text-align: center;
-    color: rgba(255,255,255,0.5);
 }
+
 #projects_text {
     margin-bottom: 40px;
 }
+
+/* About section */
 #about {
     text-align: center;
     padding: 20px;
     margin: 100px auto;
 }
+
 #about_text {
     margin-bottom: 40px;
 }
 
+/* Contact section */
 #contact {
     text-align: center;
     padding: 20px;
@@ -109,17 +114,24 @@ html, body {
     background-color: white;
     padding: 4px;
     border-radius: 50px;
+    transition: box-shadow 0.3s ease;
 }
 
+.logo:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow on hover */
+}
+
+/* Footer text */
 #more_to_come {
-    color: white;
+    color: #ff6b6b; /* Matches other accent text */
     text-align: center;
     margin-bottom: 20px;
 }
 
+/* Responsive styling */
 @media (max-width: 768px) {
     #top_section {
-        flex-direction: row;   
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
         font-size: 0.8rem;
@@ -132,19 +144,24 @@ html, body {
     #main_text_section {
         margin: 20px auto;
     }
+
     .special_text {
         font-size: 1.5rem;
     }
+
     #main_text {
         font-size: 1.5rem;
     }
+
     .normal_text {
         font-size: 0.75rem;
     }
+
     .logo {
-        width: 64px;
-        height: 64px;
+        width: 32px;
+        height: 32px;
     }
+
     .link {
         margin: 0 0.8rem;
     }
@@ -154,18 +171,23 @@ html, body {
     #top_section {
         font-size: 0.5rem;
     }
+
     #main_text {
         font-size: 1rem;
     }
+
     #emre_text {
         font-size: 1rem;
     }
+
     #rotating_text {
         font-size: 1rem;
     }
+
     .special_text {
         font-size: 1rem;
     }
+
     #projects_container {
         font-size: 0.8rem;
     }
@@ -173,28 +195,34 @@ html, body {
     #hello_world {
         font-size: 0.65rem;
     }
+
     .logo {
         width: 48px;
         height: 48px;
     }
+
     .link {
         margin: 0 0.6rem;
     }
 }
+
 @media (max-width: 404px) {
     #name {
         font-size: 0.8rem;
     }
+
     #main_text {
         font-size: 0.9rem;
     }
 }
+
 @media (max-width: 384px) {
     #name {
         font-size: 0.7rem;
         margin-right: auto;
     }
 }
+
 @keyframes fallIn {
     0% {
         opacity: 0;
