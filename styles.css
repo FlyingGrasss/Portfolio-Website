@@ -233,3 +233,25 @@ html, body {
         transform: translateY(0);
     }
 }
+
+.autoShow {
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+
+.autoShow.visible {
+    opacity: 1; /* Become visible when scrolled into view */
+    animation: autoShowAnimation 1s ease-in-out; /* Keep your original animation here */
+}
+
+/* Your existing keyframes */
+@keyframes autoShowAnimation {
+    from {
+        transform: translateY(200px) scale(0.3);
+    }
+    to {
+        transform: translateY(0) scale(1);
+    }
+}
+
+
