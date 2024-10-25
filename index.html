@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="EB.ico" type="image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emre Bozkurt</title>
 </head>
+
 <body>
   <div id="top_section">
     <p id="name">Emre Bozkurt</p>
     <a href="#projects" class="link">projects</a>
     <a href="#about" class="link">about</a>
     <a href="#contact" class="link">contact</a>
-    <a href="https://www.linkedin.com/in/emre-bozkurt-01285429b/" class="link" id="linkedin_top" target="_blank">Linked<span id="linkedin_box">in</span></a>
+    <a href="https://www.linkedin.com/in/emre-bozkurt-01285429b/" class="link" id="linkedin_top"
+      target="_blank">Linked<span id="linkedin_box">in</span></a>
   </div>
   <p id="hello_world">Hello World!</p>
   <div id="main_text_section">
-    <h1 id="main_text">I'm <span class="special_text" id="emre_text">Emre</span>, a programmer with a passion for <span class="special_text" id="rotating_text"></span></h1>
+    <h1 id="main_text">I'm <span class="special_text" id="emre_text">Emre</span>, a programmer with a passion for <span
+        class="special_text" id="rotating_text"></span></h1>
     <script src="script.js"></script>
   </div>
   <div id="projects" class="autoShow">
@@ -27,13 +33,20 @@
     <div id="projects_container" class="autoShow">
       <h2 style="font-weight: 1000; color: #222222; margin-bottom: 20px;">Python Image Scraper</h2>
       <img src="carbon.png" alt="code" width="600px">
+      <div id="marquee_wrapper">
+        <img src="landscape1.jpeg" class="marquee_item" id="marquee_item1" alt="">
+        <img src="landscape2.jpeg" class="marquee_item" id="marquee_item2" alt="">
+        <img src="landscape3.jpeg" class="marquee_item" id="marquee_item3" alt="">
+        <img src="landscape4.jpeg" class="marquee_item" id="marquee_item4" alt="">
+      </div>
     </div>
   </div>
   <div id="about" class="autoShow">
     <h1 class="special_text" id="about_text">about</h1>
-    <h3 id="first_paragraph" class="normal_text">Hey there! I’m Emre, your go-to coder for making life easier and more fun. I started coding as a hobby and now I’m all about Python, automation, and turning boring tasks into cool projects.</p>
-    <h3 id="second_paragraph" class="normal_text">I built a web scraper to snag images based on what you need and a script that updates my uncle’s website with daily news—talk about making tech work for you! Plus, I’m a fan of web design, mixing creativity with code.</p>
-    <h3 id="third_paragraph" class="normal_text">Let’s make something awesome together!</p>
+    <h3 id="first_paragraph" class="normal_text">Hi, I'm Emre! I started coding for fun and now focus on Python and automation.</p>
+      <h3 id="second_paragraph" class="normal_text">I’ve built a web scraper to find images and a script to update my uncle’s website with daily news. 
+        I love mixing creativity with code through web design.</p>
+        <h3 id="third_paragraph" class="normal_text">Let’s make something awesome together!</p>
   </div>
   <div id="contact" class="autoShow">
     <h1 class="special_text" id="contact_header">contact</h1>
@@ -45,9 +58,10 @@
         <img class="logo" src="linkedin-logo.png" alt="linkedin logo">
       </a>
     </div>
-    <h3 style="text-align: center;">emre.bozqurt@gmail.com</h3>
+    <a href="mailto:emre.bozqurt@gmail.com?subject=Hello&body=I'd%20like%20to%20know%20more!" id="email">Email Me!</a>
   </div>
   <h3 id="more_to_come">More to come...</h3>
   <div style="height: 200px;"></div>
 </body>
+
 </html>

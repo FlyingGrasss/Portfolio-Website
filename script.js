@@ -15,15 +15,14 @@ rotateText();
 setInterval(rotateText, 2000);
 
 window.addEventListener('scroll', function() {
-    const elements = document.querySelectorAll('.autoShow'); // Adjust the selector as needed
+    const elements = document.querySelectorAll('.autoShow');
     const windowHeight = window.innerHeight;
 
     elements.forEach(element => {
         const elementTop = element.getBoundingClientRect().top;
 
-        // Change the threshold value (e.g., 300) to adjust when the animation triggers
         if (elementTop < windowHeight - 300) { 
-            element.classList.add('visible'); // Make sure to add the animation class here
+            element.classList.add('visible');
         }
     });
 });

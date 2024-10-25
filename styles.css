@@ -1,4 +1,3 @@
-/* General settings */
 img {
     max-width: 100%;
     height: auto;
@@ -13,7 +12,6 @@ html, body {
     scroll-behavior: smooth;
 }
 
-/* Top section styling */
 #top_section {
     margin-bottom: 1.2rem;
     display: flex;
@@ -31,14 +29,14 @@ html, body {
 
 .link {
     text-decoration: none;
-    color: #174879; /* Adjusted to match LinkedIn button */
+    color: #174879; 
     margin: 0px 1.2rem;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .link:hover {
-    color: #ff6b6b; /* Softer hover effect */
+    color: #ff6b6b; 
 }
 
 #linkedin_top {
@@ -51,7 +49,7 @@ html, body {
 }
 
 #linkedin_top:hover {
-    background-color: #ff6b6b; /* Hover color to blend with the gradient */
+    background-color: #ff6b6b;
 }
 
 #main_text_section {
@@ -62,7 +60,7 @@ html, body {
 
 #main_text {
     font-size: 2rem;
-    color: #333333; /* Softer than black */
+    color: #333333;
 }
 
 #hello_world {
@@ -73,12 +71,11 @@ html, body {
 }
 
 .special_text {
-    color: #ff6b6b; /* Harmonizes with the background gradient */
+    color: #ff6b6b;
     font-weight: bolder;
     margin-bottom: 40px;
 }
 
-/* Projects section */
 #projects {
     margin-top: 50px;
     padding: 20px;
@@ -89,18 +86,56 @@ html, body {
     margin-bottom: 40px;
 }
 
-/* About section */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#marquee_wrapper {
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+    margin-inline: auto;
+    height: 131px;
+    margin-top: 1rem;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0));
+}
+.marquee_item {
+    width: 200px;
+    border-radius: 6px;
+    position: absolute;
+    left: max(800px, 100%);
+    animation-name: scrollToLeft;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#marquee_item1 {
+    animation-delay: calc(20s / 4 * (8 - 1) * -1);
+}
+#marquee_item2 {
+    animation-delay: calc(20s / 4 * (8 - 2) * -1);
+}
+#marquee_item3 {
+    animation-delay: calc(20s / 4 * (8 - 3) * -1);
+}
+#marquee_item4 {
+    animation-delay: calc(20s / 4 * (8 - 4) * -1);
+}
+
 #about {
     text-align: center;
     padding: 20px;
     margin: 100px auto;
+    max-width: 70%;
 }
 
 #about_text {
     margin-bottom: 40px;
 }
 
-/* Contact section */
 #contact {
     text-align: center;
     padding: 20px;
@@ -108,27 +143,40 @@ html, body {
 }
 
 .logo {
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: 64px;
     margin: 12px;
-    background-color: white;
+    background-color: #fecfef;
     padding: 4px;
     border-radius: 50px;
     transition: box-shadow 0.3s ease;
 }
 
 .logo:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+#email {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #174879; 
+    color: #ffffff; 
+    text-decoration: none;
+    border-radius: 5px; 
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Footer text */
+#email:hover {
+    scale: scale(1.05);
+    background-color: #ff6b6b;
+}
 #more_to_come {
-    color: #ff6b6b; /* Matches other accent text */
+    color: #ff6b6b;
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Responsive styling */
 @media (max-width: 768px) {
     #top_section {
         flex-direction: row;
@@ -222,7 +270,11 @@ html, body {
         margin-right: auto;
     }
 }
-
+@keyframes scrollToLeft {
+    to {
+        left: -200px;
+    }
+}
 @keyframes fallIn {
     0% {
         opacity: 0;
@@ -235,16 +287,15 @@ html, body {
 }
 
 .autoShow {
-    opacity: 0; /* Start invisible */
-    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;
 }
 
 .autoShow.visible {
-    opacity: 1; /* Become visible when scrolled into view */
-    animation: autoShowAnimation 1s ease-in-out; /* Keep your original animation here */
+    opacity: 1; 
+    animation: autoShowAnimation 1s ease-in-out; 
 }
 
-/* Your existing keyframes */
 @keyframes autoShowAnimation {
     from {
         transform: translateY(200px) scale(0.3);
@@ -253,5 +304,3 @@ html, body {
         transform: translateY(0) scale(1);
     }
 }
-
-
